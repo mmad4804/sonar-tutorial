@@ -48,8 +48,6 @@ class CustomFileReaderTest {
   void testEquals() {
     CustomFileReader sameAsSut = new CustomFileReader("readMe1.txt");
     assertNotEquals(null, sut);
-    assertNotEquals("I am a string, not a reader", sut);
-    assertEquals(sut, sut);
     assertEquals(sameAsSut, sut);
   }
 

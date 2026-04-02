@@ -13,7 +13,7 @@ class CustomFileReader {
     /**
      * The scanner that will read the dictionary
      */
-    private String path;
+    private final String path;
 
     /**
      * The sentence that will be constructed
@@ -172,7 +172,7 @@ class CustomFileReader {
             return false;
         }
 
-        return comparedReader.getPath() == path;
+        return comparedReader.getPath().equals(path);
     }
 
     private Scanner createScanner() throws FileNotFoundException {
